@@ -13,7 +13,6 @@ class AddIcons {
     let property_color = '';
     switch (address.properties.property_type) {
       case "detached":
-        // get checked value here?
         property_color = "#0000ff";
         break;
       case "flat-maisonette":
