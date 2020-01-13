@@ -24,9 +24,7 @@ class SearchCriteria {
     search_criteria.postcode = document.getElementById('shortcode').value.toUpperCase() + ' ' + document.getElementById('postcode').value.toUpperCase();
 
     return (search_criteria);
-    //return (tmp);
   }
-
 }
 
 export default SearchCriteria;
