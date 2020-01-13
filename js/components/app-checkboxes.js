@@ -23,12 +23,10 @@ class appCheckboxes extends RootElement {
         <label for="flat" id="flat_label">flat</label>
       </span>
 
-
       <span class="type terraced">
         <input type="checkbox" value="terraced" id="terraced" checked>
         <label for="terraced" id ="terraced_label">terraced</label>
       </span>
-
 
       <span class="type semi">
         <input type="checkbox" value="semi" id="semi" checked>
