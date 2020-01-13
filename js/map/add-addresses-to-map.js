@@ -36,7 +36,6 @@ class AddAddressesToMap {
       this.popup.setContent(this.addr);
       this.popup.setLatLng(marker.getLatLng());
       map.openPopup(this.popup);
-      //window.open(marker.feature.properties.url);
     })
 
     window.options = {
