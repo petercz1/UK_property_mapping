@@ -23,13 +23,6 @@ class SearchCriteria {
     // combine shortcode (eg PO33) with postcode (eg 1OH) and convert to uppercase
     search_criteria.postcode = document.getElementById('shortcode').value.toUpperCase() + ' ' + document.getElementById('postcode').value.toUpperCase();
 
-    let tmp = {
-      town: "RYDE",
-      min: "100000",
-      max: "300000",
-      date_sold: "2019-01-01",
-      postcode: "PO33"
-    }
     return (search_criteria);
     //return (tmp);
   }
