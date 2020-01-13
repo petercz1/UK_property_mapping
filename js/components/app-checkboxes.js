@@ -18,7 +18,6 @@ class appCheckboxes extends RootElement {
         <label for="detached" id="detached_label">detached</label>
       </span>
 
-
       <span class="type flat">
         <input type="checkbox" value="flat" id="flat" checked>
         <label for="flat" id="flat_label">flat</label>
