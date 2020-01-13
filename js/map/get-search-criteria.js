@@ -14,6 +14,7 @@ class SearchCriteria {
     search_criteria.min = parseInt(min);
     let max = document.getElementById('max').value.replace(/[£,]+/g, "");
     search_criteria.max = parseInt(max);
+    
     search_criteria.date_sold = document.getElementById('date_sold').value;
     search_criteria.postcode = document.getElementById('shortcode').value.toUpperCase() + ' ' + document.getElementById('postcode').value.toUpperCase();
 
