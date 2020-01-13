@@ -20,7 +20,7 @@ class SearchCriteria {
     // get date sold
     search_criteria.date_sold = document.getElementById('date_sold').value;
 
-    // combine postcode and convert to uppercase
+    // combine shortcode with postcode and convert to uppercase
     search_criteria.postcode = document.getElementById('shortcode').value.toUpperCase() + ' ' + document.getElementById('postcode').value.toUpperCase();
 
     let tmp = {
