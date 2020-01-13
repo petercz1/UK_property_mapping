@@ -11,6 +11,7 @@ class SearchCriteria {
     let town_obj = JSON.parse(document.getElementById('towns').value);
     search_criteria.town = town_obj.town.toUpperCase();
 
+    // 
     let min = document.getElementById('min').value.replace(/[£,]+/g, "");
     search_criteria.min = parseInt(min);
     let max = document.getElementById('max').value.replace(/[£,]+/g, "");
