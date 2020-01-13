@@ -19,6 +19,8 @@ class SearchCriteria {
 
     // get date sold
     search_criteria.date_sold = document.getElementById('date_sold').value;
+
+    // combine postcod
     search_criteria.postcode = document.getElementById('shortcode').value.toUpperCase() + ' ' + document.getElementById('postcode').value.toUpperCase();
 
     let tmp = {
