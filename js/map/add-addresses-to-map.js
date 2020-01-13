@@ -63,7 +63,6 @@ class AddAddressesToMap {
       }
     }
 
-
     window.addresses_layer = new L.geoJSON(addresses, options);
     addresses_layer.addTo(map);
   }
