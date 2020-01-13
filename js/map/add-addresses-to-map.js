@@ -65,7 +65,6 @@ class AddAddressesToMap {
 
 
     window.addresses_layer = new L.geoJSON(addresses, options);
-    // map.fitBounds(L.geoJSON(addresses).getBounds());
     addresses_layer.addTo(map);
   }
 
