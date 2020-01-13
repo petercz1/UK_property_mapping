@@ -1,2 +1,0 @@
-spiderify markers
-add selection boxes
