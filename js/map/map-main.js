@@ -1,0 +1,41 @@
+import SearchCriteria from './get-search-criteria.js';
+import BackEnd from './get-backend.js';
+import AddIcons from './add-icons.js';
+import AddAddressesToMap from './add-addresses-to-map.js';
+
+class MapMain {
+
+  constructor() {
+    this.set_find_properties_button();
+  }
+
+  set_find_properties_button() {
+    let find_addresses = document.getElementById('find_addresses');
+    if (typeof addresses_layer != 'undefined') {
+    this.geoJSON.clearLayers();
+    }
+    find_addresses.addEventListener('click', () => {
+      this.contact_backend(new SearchCriteria());
+    });
+  }
+
+  async contact_backend(criteria) {
+    console.log(criteria);
+    window.addresses = await new BackEnd(criteria);
+    addresses = this.add_icons(addresses);
+    this.add_addresses_to_map(addresses);
+  }
+
+  add_icons(addresses) {
+    addresses = new AddIcons(addresses);
+    return addresses;
+  }
+
+  add_addresses_to_map(addresses) {
+    this.new_addresses = new AddAddressesToMap();
+    this.new_addresses.add_addresses(addresses);
+    this.new_addresses.fit();
+  }
+}
+
+export default MapMain;
