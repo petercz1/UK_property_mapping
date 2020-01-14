@@ -23,7 +23,7 @@ Clicking on a group of markers will spiderfy them eg if the postcode (and thus c
 
 ## what does it look like?
 
-`
+```
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
