@@ -76,7 +76,7 @@ SUM:                            24           3254           3906          11528
 
 ## prerequizits
 
-This wa built on Ubuntu 1
+This wa built on Ubuntu 19.04 and php 
 ## how to install
 
 Download the [code](https://github.com/petercz1/UK_property_mapping/archive/master.zip) to a directory and unzip.
