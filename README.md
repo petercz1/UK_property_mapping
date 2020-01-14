@@ -72,7 +72,7 @@ SUM:                            24           3254           3906          11528
     ├── counties.php
     ├── get_towns.php
     └── main.php
-`
+```
 
 ## how to install
 
