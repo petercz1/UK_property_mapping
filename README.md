@@ -90,6 +90,8 @@ Select the County and town, then fine-tune the postcode. Check the earliest date
 
 Switch properties on/off by clicking the relative checkbox.
 
-## 
+## caveat
+
+The landregistry site is v-e-r-y-
 
 Enjoy.
