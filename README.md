@@ -92,6 +92,6 @@ Switch properties on/off by clicking the relative checkbox.
 
 ## caveat
 
-The landregistry site is v-e-r-y slow. Expect it to take 
+The landregistry site is v-e-r-y slow. Expect it to take a good 30 seconds to respond.
 
 Enjoy.
