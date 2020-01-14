@@ -21,6 +21,58 @@ The front-end then takes the [geoJSON](https://geojson.org/) array, adds colored
 
 Clicking on a group of markers will spiderfy them eg if the postcode (and thus coordinates) is the same for a block of flats. Clicking on an individual marker will search for that property on Google.
 
+## what does it look like?
+
+`-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+JavaScript                      12           2725           3477           8808
+PHP                              9            478            426           2569
+CSS                              1             21              3            110
+Markdown                         1             19              0             21
+HTML                             1             11              0             20
+-------------------------------------------------------------------------------
+SUM:                            24           3254           3906          11528
+
+├── backend
+│   ├── debug.log
+│   ├── getcoords.php
+│   ├── getpropertiessold.php
+│   ├── libraries
+│   │   ├── simple_html_dom.php
+│   │   └── sparqllib.php
+│   ├── main.php
+│   └── makegeojson.php
+├── css
+│   └── style.css
+├── images
+│   └── favicon.png
+├── index.html
+├── js
+│   ├── components
+│   │   ├── app-checkboxes.js
+│   │   ├── app-map.js
+│   │   └── app-selectors.js
+│   ├── data
+│   │   └── counties_and_towns.js
+│   ├── libraries
+│   │   ├── leaflet.js
+│   │   ├── oms.js
+│   │   └── rootelement.js
+│   ├── main.js
+│   └── map
+│       ├── add-addresses-to-map.js
+│       ├── add-icons.js
+│       ├── get-backend.js
+│       ├── get-search-criteria.js
+│       └── map-main.js
+├── README.md
+└── update_counties_towns
+    ├── counties.php
+    ├── get_towns.php
+    └── main.php
+`
+
 ## how to install
 
 Download the [code](https://github.com/petercz1/UK_property_mapping/archive/master.zip) to a directory and unzip.
