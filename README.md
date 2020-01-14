@@ -77,7 +77,7 @@ SUM:                            24           3254           3906          11528
 
 Download the [code](https://github.com/petercz1/UK_property_mapping/archive/master.zip) to a directory and unzip.
 
-open the directory it's in and start a php server with `php -S localhost:4567`.
+Using a terminal open the directory it's in and start a php server with `php -S localhost:4567`.
 
 Point your browser at `localhost:4567`.
 
