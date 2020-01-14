@@ -74,7 +74,7 @@ SUM:                            24           3254           3906          11528
     └── main.php
 ```
 
-## prerequizits
+## prerequisits
 
 This was built on Ubuntu 19.04, php 7.3 and chromium but any box running php 7.x and a flavor of chromium/chrome (with php7.x-xml and php7.x-curl installed) should be fine.
 
