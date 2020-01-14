@@ -76,7 +76,7 @@ SUM:                            24           3254           3906          11528
 
 ## prerequizits
 
-This wa built on Ubuntu 19.04 and php 7.3 but any box running php 7.x should be fine.
+This was built on Ubuntu 19.04 and php 7.3 but any box running php 7.x should be fine
 
 ## how to install
 
