@@ -4,7 +4,7 @@
 
 Uses free services ([landregistry.data.gov.uk](https://landregistry.data.gov.uk/app/qonsole), [postcodes.io](https://postcodes.io/) and [openstreetmap.org](https://www.openstreetmap.org/)) to search for sold properties.
 
-Demo clip shows a search for all properties sold in Ryde PO33:
+Demo clip shows a search for all properties sold in Ryde PO33, £10:
 
 ![](demo.gif)
 
