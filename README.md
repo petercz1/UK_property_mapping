@@ -76,7 +76,7 @@ SUM:                            24           3254           3906          11528
 
 ## prerequizits
 
-This was built on Ubuntu 19.04 and php 7.3 but any box running php 7.x (with php-7.x-xml and php7.x-curlshould be fine
+This was built on Ubuntu 19.04 and php 7.3 but any box running php 7.x (with php7.x-xml and php7.x-curl) should be fine
 
 ## how to install
 
