@@ -92,6 +92,6 @@ Switch properties on/off by clicking the relative checkbox.
 
 ## caveat
 
-The landregistry site is v-e-r-y-
+The landregistry site is v-e-r-y slow. Expect 
 
 Enjoy.
