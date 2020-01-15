@@ -11,7 +11,7 @@ class SearchCriteria {
     console.log(document.getElementById('towns').value);
     if (document.getElementById('towns').value == '' || document.getElementById('towns').value == 'not selected') {
       document.getElementById('info').innerHTML = 'select a county and town, mogron...';
-      
+      return;
     }
     let town_obj = JSON.parse(document.getElementById('towns').value);
     search_criteria.town = town_obj.town.toUpperCase();
