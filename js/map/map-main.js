@@ -27,7 +27,7 @@ class MapMain {
     if (addresses.error) {
       return err.innerHTML = addresses.error + ': ' + addresses.error_no;
     }
-    
+    info.innerHTML = 'contacting landregistry...';
     addresses = this.add_icons(addresses);
     this.add_addresses_to_map(addresses);
   }
