@@ -26,7 +26,7 @@ class MapMain {
     info.innerHTML = 'contacting landregistry...';
     window.addresses = await new BackEnd(criteria);
     if (addresses.error) {
-      return err.innerHTML = addresses.error + ': ' + addresses.error_no;
+      return info.innerHTML = addresses.error + ': ' + addresses.error_no;
     }
     info.innerHTML = '';
     addresses = this.add_icons(addresses);
