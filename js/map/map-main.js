@@ -23,7 +23,7 @@ class MapMain {
   async contact_backend(criteria) {
     window.addresses = await new BackEnd(criteria);
     if (addresses.error) {
-      let err = document.getElementById('error');
+      let info = document.getElementById('info');
       return err.innerHTML = addresses.error + ': ' + addresses.error_no;
     }
     addresses = this.add_icons(addresses);
