@@ -15,9 +15,9 @@ landregistry.data.gov.uk using [SPARQL](https://en.wikipedia.org/wiki/SPARQL) an
 
 These are sent to postcodes.io to turn the postcodes into geocoordinates.
 
-Lastly, the backend turns the properties array into geoJSON. This is sent back to the front-end. Total time 5 - 45 seconds. Yes, it's slow. I don't control the landregistry.
+Lastly, the backend turns the properties array into [geoJSON](https://geojson.org/). This is sent back to the front-end. Total time 5 - 45 seconds. Yes, it's slow. I don't control the landregistry.
 
-The front-end then takes the [geoJSON](https://geojson.org/) array, adds colored markers with the price (blue: detached, orange: flats, green: terraced, brown: semi) and then plots them.
+The front-end then takes the geoJSON array, adds colored property markers with the price (detached (blue), flats (orange), terraced (green), semi:(brown)) and then plots them.
 
 Clicking on a group of markers will spiderfy them if the postcode (and thus coordinates) is the same eg for a block of flats. Clicking on an individual marker will open Google and search images for that property. You may even be lucky and get the original agent's photos...
 
