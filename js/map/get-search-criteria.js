@@ -9,7 +9,6 @@ class SearchCriteria {
 
     // grab town name and convert to uppercase
     console.log(document.getElementById('towns').value);
-
     let town_obj = JSON.parse(document.getElementById('towns').value);
     search_criteria.town = town_obj.town.toUpperCase();
 
