@@ -22,7 +22,7 @@ class MapMain {
   // contaxts backend 
   async contact_backend(criteria) {
     let info = document.getElementById('info');
-    info.innerHTML = ''
+    info.innerHTML = 'contacting landregistry...';
     window.addresses = await new BackEnd(criteria);
     if (addresses.error) {
       return err.innerHTML = addresses.error + ': ' + addresses.error_no;
