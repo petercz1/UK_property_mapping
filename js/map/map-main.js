@@ -21,9 +21,9 @@ class MapMain {
 
   // contaxts backend 
   async contact_backend(criteria) {
+    let info = document.getElementById('info');
     window.addresses = await new BackEnd(criteria);
     if (addresses.error) {
-      let info = document.getElementById('info');
       return err.innerHTML = addresses.error + ': ' + addresses.error_no;
     }
     addresses = this.add_icons(addresses);
