@@ -63,7 +63,7 @@ class AddAddressesToMap {
       }
     }
 
-    if(typeof(addresses_layer != 'undefined'))
+    if(typeof(addresses_layer != 'undefined')){
     map.removeLayer(addresses_layer);
     window.addresses_layer = new L.geoJSON(addresses, options);
     addresses_layer.addTo(map);
