@@ -21,7 +21,7 @@ class MapMain {
 
   // contaxts backend 
   async contact_backend(criteria) {
-    if()
+    if(document.getElementById('info').value)
     let info = document.getElementById('info');
     info.innerHTML = 'contacting landregistry...';
     window.addresses = await new BackEnd(criteria);
