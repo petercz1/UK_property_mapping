@@ -18,8 +18,9 @@ class MapMain {
       if (document.getElementById('towns').value == '' || document.getElementById('towns').value == 'not selected') {
         document.getElementById('info').innerHTML = 'select a county and town, mogron...';
         return;
-      }else{
-      this.contact_backend(new SearchCriteria());
+      } else {
+        this.contact_backend(new SearchCriteria());
+      }
     });
   }
 
