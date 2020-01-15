@@ -84,11 +84,10 @@ class GetPropertiesSold
         OPTIONAL {?addr lrcommon:saon ?saon}
         OPTIONAL {?addr lrcommon:street ?street}
     }
-    ";    
+    ";
         $result = sparql_query($sparql);
         if (!$result) {
-            print sparql_errno() . ": " . sparql_error(). "\n";
-            exit;
+            return ['error'=>'landregistry error', 'error_no'=> sparql_errno() . ': ' . sparql_error()];
         }
         $result= (array)$result;
         return $result['rows'];

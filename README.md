@@ -11,15 +11,15 @@ Demo clip shows a search for all properties sold in Ryde PO33 1xx, £100k to £3
 ## how does it work?
 
 The front-end gathers up the search criteria and sends them to a php backend. The backend interrogates 
-landregistry.data.gov.uk using [SPARQL](https://en.wikipedia.org/wiki/SPARQL) and (slowly...) returns matching properties.
+landregistry.data.gov.uk using [SPARQL](https://en.wikipedia.org/wiki/SPARQL) and (eventually...) returns matching properties.
 
 These are sent to postcodes.io to turn the postcodes into geocoordinates.
 
-Lastly, the backend turns the properties array into geoJSON. This is sent back to the front-end. Total time 20 - 40 seconds. Yes, it's slow. I don't control the landregistry.
+Lastly, the backend turns the properties array into geoJSON. This is sent back to the front-end. Total time 5 - 45 seconds. Yes, it's slow. I don't control the landregistry.
 
 The front-end then takes the [geoJSON](https://geojson.org/) array, adds colored markers with the price (blue: detached, orange: flats, green: terraced, brown: semi) and then plots them.
 
-Clicking on a group of markers will spiderfy them eg if the postcode (and thus coordinates) is the same for a block of flats. Clicking on an individual marker will search for that property on Google.
+Clicking on a group of markers will spiderfy them if the postcode (and thus coordinates) is the same eg for a block of flats. Clicking on an individual marker will open Google and search images for that property. You may even be lucky and get the original agent's photos...
 
 ## what does it look like?
 
@@ -92,6 +92,6 @@ Switch properties on/off by clicking the relative checkbox.
 
 ## caveat
 
-The landregistry site is v-e-r-y slow. Expect it to take a good 30 seconds to respond.
+The landregistry site is v-e-r-y slow. Expect it to take a good 30 seconds to respond. Too broad a search and it will timeout.
 
 Enjoy.

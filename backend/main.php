@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 namespace chipbug\postcodes;
+
 session_start();
 
 // dumps debug stuff into a debug.log file in this directory
@@ -18,7 +19,17 @@ require_once("makegeojson.php");
 $request = json_decode(file_get_contents('php://input'), true);
 
 $properties_sold = (new GetPropertiesSold)->init($request);
-$properties_with_coords = (new GetCoords)->init($properties_sold);
-$geojson = (new MakeGeoJson)->init($properties_with_coords);
+if ($properties_sold['error']) {
+    echo(json_encode($properties_sold));
+    exit;
+} else {
+    $properties_with_coords = (new GetCoords)->init($properties_sold);
+}
 
-echo json_encode($geojson);
+if ($properties_with_coords['error']) {
+    echo(json_encode($properties_with_coords));
+    exit;
+} else {
+    $geojson = (new MakeGeoJson)->init($properties_with_coords);
+    echo json_encode($geojson);
+}

@@ -32,7 +32,7 @@ class appCheckboxes extends RootElement {
         <input type="checkbox" value="semi" id="semi" checked>
         <label for="semi" id="semi_label">semi</label>
 	  </span>
-	  
+	  <span id="error"></span>
     </div>
 		`;
   }
