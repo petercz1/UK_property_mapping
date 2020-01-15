@@ -1,7 +1,7 @@
 class SearchCriteria {
 
   constructor() {
-	  return this.get_search_criteria();
+    return this.get_search_criteria();
   }
 
   get_search_criteria() {
@@ -9,8 +9,8 @@ class SearchCriteria {
 
     // grab town name and convert to uppercase
     console.log(document.getElementById('towns').value);
-    if(document.getElementById('towns').value == '' || document.getElementById('towns').value == 'not selected'){
-      return document.getElementById('info').innerHTML = 'select a county and town'
+    if (document.getElementById('towns').value == '' || document.getElementById('towns').value == 'not selected') {
+      return document.getElementById('info').innerHTML = 'select a county and town, mogron...';
     }
     let town_obj = JSON.parse(document.getElementById('towns').value);
     search_criteria.town = town_obj.town.toUpperCase();
