@@ -18,7 +18,7 @@ class appSelectors extends RootElement {
 		<select name="towns" id="towns"></select>
 
 		<span>
-		<input type="text" placeholder="Postcode starts with..." id="shortcode" disabled>
+		<input type="text" placeholder="postcode" id="shortcode" disabled>
 		</span>
 
 		<span>
