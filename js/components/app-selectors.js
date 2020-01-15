@@ -27,7 +27,7 @@ class appSelectors extends RootElement {
 
 		<input type="text" id="min" class="prices" placeholder="min" value="£100,000">
 		<span class="type">to</span>
-		<input type="text" id="max" class="prices" placeholder="max" value="£300,000">
+		<input type="text" id="max" class="prices" placeholder="max" value="£250,000">
 
 		<span class="type">
 		<label for="date_sold">Sold since</label>
